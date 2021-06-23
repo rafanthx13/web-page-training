@@ -41,7 +41,7 @@
 
 	<!-- Content -->
 	<div id="app" class="container">
-		<h1>Web Pages Projects</h1>
+		<h1>Web Pages Projects!</h1>
 		<ul>
 			<li v-for="project in web_pages">
 				<a v-bind:href="project.source">{{ project.name }}</a>
@@ -59,14 +59,14 @@
 			data: {
 				web_pages: [
 				{
-					name: 'example01',
+					name: 'example01 - Meu Portifolio',
 					source: './example-01-portifolio-old/index.html',
 					description: 'example01'
 				},
 				{
 					name: 'example02',
 					source: './example-02-barbara-klein/index.html',
-					description: 'example02'
+					description: 'Reproduçâo de Site feito wm WordPress (Em construção)'
 				},
 				{
 					name: 'example03',
@@ -78,6 +78,32 @@
 					source: './example-04-tailwind-landing/public/index.html',
 					description: 'example04'
 				},
+				{
+					name: 'example-05-full-web-js-pure - Ladning Page',
+					source: '',
+					description: 'Em Construção'
+				},
+				{
+					name: 'example-06-vite-vue-tail - Exemplo Simples',
+					source: '',
+					description: 'Build com Vite. Exemplo simples de aplicaçâo Vue3 com VueRouter/Vuex/Tailwind'
+				},
+				{
+					name: 'example-07-tailwind-vite-landing - Landing Page Simples com Hamburguer',
+					source: '',
+					description: 'Build com Vite. Exemplo simples usando Template do TailWindUI. Responsivo com Hamburguer'
+				},
+				{
+					name: 'example-08-tailwind-eshop - Eshop HTML Static',
+					source: 'example-08-tailwind-eshop/src/index.html',
+					description: 'Site Static com Tailwind e uso de Vue CDN'
+				},
+				{
+					name: 'example-10-workstation-in-nuxt',
+					source: 'https://nuxt-work-station-sample.vercel.app/',
+					description: 'Reproduction of React project. COnvertet in Nuxt and deployed. TailwindCSS',
+				}
+
 				]
 			}
 		});
