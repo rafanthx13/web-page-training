@@ -48,10 +48,13 @@
 		<h1>Web Pages Projects!</h1>
 		<ul>
 			<li v-for="project in web_pages">
-				<a v-bind:href="project.source">{{ project.name }}</a>
+				<span v-if="project.is_off">{{ project.name }}</span>
+				<a v-else v-bind:href="project.source">{{ project.name }}</a>
 				<ul>
 					<li>{{ project.description }}</li>
+					<li v-if="project.link"><a v-bind:href="project.link">{{ project.link_description }}</a></li>
 				</ul>
+
 			</li>
 		</ul>
 	</div>
@@ -68,44 +71,45 @@
 					description: 'Meu Portifolio. TailWind'
 				},
 				{
-					name: 'example02',
+					name: 'example02 - Barbara Klein',
 					source: './example-02-barbara-klein/index.html',
-					description: 'Reprodução de Site feito wm WordPress (Em construção)'
+					description: 'Reprodução de Site feito WordPress',
+					link: 'https://barbaraklein.com.br/',
+					link_description: 'Clone do Site Barbara Klein'
 				},
 				{
-					name: 'example03',
-					source: './example-03-web-site-go-landing/index.html',
-					description: 'example03'
+					name: 'example03 - Landing Page : BookMark',
+					source: './example-03-tailwind-landing/public/index.html',
+					description: 'Landing Page com TailWind',
+					link: 'https://www.youtube.com/watch?v=00gyCtIQp8E&ab_channel=JohnKomarnicki',
+					link_description: 'Youtube - John Komarnicki - Build a Modern Landing Page With Tailwind CSS'
+
 				},
 				{
-					name: 'example04 - Landing Page : BookMark',
-					source: './example-04-tailwind-landing/public/index.html',
-					description: 'Landing Page com TailWind'
-				},
-				{
-					name: 'example-05-full-web-js-pure - Ladning Page',
+					name: 'example-04-vite-vue-tail - Exemplo Simples',
 					source: '',
-					description: 'Em Construção'
+					description: 'Build com Vite. Exemplo simples de aplicação Vue3 com VueRouter/Vuex/Tailwind',
+					link: 'https://www.youtube.com/watch?v=O8epzPrsADI&ab_channel=AhmedHashim',
+					link_description: 'Youtube - Getting started with Vue 3 + Vite in 2021',
+					is_off: true,
 				},
 				{
-					name: 'example-06-vite-vue-tail - Exemplo Simples',
+					name: 'example-05-tailwind-vite-landing - Landing Page Simples com Hamburguer',
 					source: '',
-					description: 'Build com Vite. Exemplo simples de aplicação Vue3 com VueRouter/Vuex/Tailwind'
+					description: 'Build com Vite. Exemplo simples usando Template do TailWindUI. Responsivo com Hamburguer',
+					is_off: true,
 				},
 				{
-					name: 'example-07-tailwind-vite-landing - Landing Page Simples com Hamburguer',
-					source: '',
-					description: 'Build com Vite. Exemplo simples usando Template do TailWindUI. Responsivo com Hamburguer'
+					name: 'example-06-tailwind-eshop - Eshop HTML Static',
+					source: './example-06-tailwind-eshop/src/index.html',
+					description: 'Site estático com Tailwind e uso de Vue CDN',
+					link: 'https://www.youtube.com/watch?v=iNDvh7O2WZM&ab_channel=PradipDebnathPradipDebnath',
+					link_description: 'Youtube - Pradip Debnath - Design Responsive eCommerce Website with Tailwind CSS'
 				},
 				{
-					name: 'example-08-tailwind-eshop - Eshop HTML Static',
-					source: './example-08-tailwind-eshop/src/index.html',
-					description: 'Site estático com Tailwind e uso de Vue CDN'
-				},
-				{
-					name: 'example-10-workstation-in-nuxt',
+					name: 'example-07-workstation-in-nuxt',
 					source: 'https://nuxt-work-station-sample.vercel.app/',
-					description: 'Reproduçâo de Projeto em React, convertido para Nuxt. Deploy em Vercel. TailwindCSS',
+					description: 'Reprodução de Projeto em React, convertido para Nuxt. Deploy em Vercel. TailwindCSS',
 				}
 
 				]
