@@ -1,7 +1,6 @@
-
 @font-face {
-	font-family: 'Monserrat';
-	src: url('./../../assets/fonts/Montserrat-Regular.ttf');
+	font-family: "Monserrat";
+	src: url("./../../assets/fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
@@ -11,9 +10,88 @@
 }
 
 body {
-	font-family: 'Monserrat';
+	font-family: "Monserrat";
 }
 
-h1{
-	font-family: 'MonserratBold';
+h1 {
+	font-family: "MonserratBold";
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 1.2em;
+	letter-spacing: 0.8px;
 }
+
+.image-hero {
+	background-image: url("./../../assets/images/background-home-image.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* TEST */
+	/* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+	z-index: 1;
+	position: relative;
+	box-sizing: border-box;
+	height: 115vh; /* Tem que deixar mais para pegar o shape fora do full-screen */
+}
+
+.call-button {
+	background-color: transparent;
+	background-image: linear-gradient(160deg, #ff5e1e 22%, #9543a2 83%);
+	color: #ffffff;
+	border-radius: 45px;
+	box-shadow: 0px 0px 10px 0px #db8d6d;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+/* O SVG É transparete na área nao pintada, entao, agente inverte ele e pinta de banroc, ai aparece emcima a parte da imagem e embaixo branco como queremos*/
+.divider {
+	fill: white;
+	width: calc(100% + 1.3px);
+	height: 70px;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.shape-bottom {
+	bottom: -1px;
+	position: absolute;
+	width: 100%;
+	/* 
+	overflow: hidden;
+	left: 0;
+	line-height: 0;
+	direction: ltr; 
+	*/
+}
+
+.nav-list li {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: #ffffff;
+	font-weight: 600;
+	transition: all .2s linear;
+	cursor: pointer;
+}
+
+.nav-list li:hover {
+	color: #ff5e1e;
+	transition: all .2s linear;
+}
+
+.social-media-icons li {
+	position: relative;
+	display: block;
+	color: #fff;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #1E6091;
+	padding: 0.4rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+.social-media-icons li:hover {
+	transform: scale(1.1); /* Aumentar umpouco */
+	transition-duration: .3s;
+}
+

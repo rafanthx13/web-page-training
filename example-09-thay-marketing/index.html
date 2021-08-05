@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfólio - Thay Pelo Marketing</title>
 
+	<!--==================== SEO ====================-->
 	<!-- All in One SEO 4.1.2.2 --> <!-- Copy Paste -->
 	<meta name="description" content="Acesse nosso portfólio e conheça nossos serviços. Criamos sites, páginas de vendas, gestão de mídias sociais, produção de conteúdo para a web e mais!"/>
 	<link rel="canonical" href="https://thaypelomarketing.online/portfolio/" />
@@ -29,40 +30,70 @@
 	<link rel="stylesheet" href="./src/css/style.css">
 	<link rel="stylesheet" href="./src/css/my-css.css">
 	<!-- <link rel="stylesheet" href="./assets/tailwind.css"> -->
-
-
+	<script src="https://kit.fontawesome.com/f5913b1737.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-	<header>
+
+	<div class="w-full min-h-screen image-hero">
+		<!-- HEADER -->
+	<header class="mx-4">
 		<nav>
-			<img src="./assets/images/logo.png" alt="">
-			<ul>
-				<li>Sobre</li>
-				<li>Serviços</li>
-				<li>Projetos</li>
-				<li>Contato</li>
-			</ul>
-			<ul class="nav__social-media-icons">
-				<li>Instagram</li>
-				<li>Linkedin</li>
-				<li>Whatsapp</li>
-			</ul>
+			<div class="relative flex flex-row items-center justify-between h-16 mx-4">
+				<img class="block w-16 h-16" src="./assets/images/logo.png" alt="">
+				<ul class="flex flex-row content-center nav-list">
+					<li><a href="#sobre">Sobre</a> </li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#projetos">Projetos</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+				<ul class="flex flex-row content-center social-media-icons">
+					<li><a href="https://www.instagram.com/thaypelomarketing/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.instagram.com/thaypelomarketing/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="https://www.instagram.com/thaypelomarketing/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+				</ul>
+
+			</div>
 		</nav>
-		<!-- Hamburguer -->
-	</header>
+			<!-- Hamburguer -->
+		</header>
+		
+		<!-- HERO:HOME -->
+		<!-- Necessario h-full para pegar toda a imagem, pois senao fica tudo la em cima -->
+		<section class="h-full mx-16">
+			<div class="flex flex-row items-center h-full">
+				<div class="flex flex-col items-start justify-center h-full">
+					<h1 class="text-white">Thayane Nunes</h1>
+					<span class="text-white">Portifolio de Apresentação</span>
+					<button class="p-4 call-button">Solicite orçamento</button>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- SVG Divider -->
+		<div class="shape-bottom">
+			<svg class="divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+				<path d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+				c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+				c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+			</svg>
+		</div>
+
+	</div>
+
+	
+
+
+
+	<!-- MAIN -->
 	<main>
 
-		<!-- HOME -->
-		<section>
-			<h1>Thayane Nunes</h1>
-			<span>Portifolio de Apresentação</span>
-			<button>Solicite orçamento</button>
-		</section>
+
 
 		<!-- SERVICES -->
 		<section>
-			<h2>O que ofereço</h2>
+			<h2 id="servicos">O que ofereço</h2>
 			<div>
 				<!-- Service 1 -->
 				<div>
@@ -87,7 +118,7 @@
 
 		<!-- ABOUT ME -->
 		<section>
-			<h2>Sobre Mim</h2>
+			<h2 id="sobre">Sobre Mim</h2>
 			<div>
 				<h3>Thay Nunues</h3>
 				<p>Graduanda em Marketing. Atua com estratégias digitais há mais de 2 anos. Certificada em Produção de Conteúdo para a Web, Marketing de Conteúdo e Inbound Marketing. Expertise em desenvolvimento de sites, páginas de vendas e páginas de captura.</p>
@@ -120,11 +151,12 @@
 
 		<!-- MY PROJECT: SWIPER -->
 		<section>
+			<h2 id="projetos">Meu projeto</h2>
 
 		</section>
 
 		<!-- CONTACT ME -->
-		<section>
+		<section id="contato">
 			<span>Vamos conversar e tirar seu projeto do papel?</span>
 			<div>
 				<span>Contato</span>
