@@ -47,7 +47,7 @@ h1 {
 /* O SVG É transparete na área nao pintada, entao, agente inverte ele e pinta de banroc, ai aparece emcima a parte da imagem e embaixo branco como queremos*/
 .divider {
 	fill: white;
-	width: calc(100% + 1.3px);
+	width: 100%;
 	height: 70px;
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
@@ -57,11 +57,11 @@ h1 {
 	bottom: -1px;
 	position: absolute;
 	width: 100%;
-	/* 
+	/*
 	overflow: hidden;
 	left: 0;
 	line-height: 0;
-	direction: ltr; 
+	direction: ltr;
 	*/
 }
 
@@ -95,3 +95,236 @@ h1 {
 	transition-duration: .3s;
 }
 
+h2 {
+	font-family: "Monserrat", Sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+/* padding: 50px 0px 30px 0px; */
+.box-service {
+	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 37%);
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+	margin: 20px 20px 20px 20px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #E5E8E8;
+	text-align: justify;
+}
+
+.service-title {
+	font-family: "Monserrat", Sans-serif;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.service-divider {
+	text-align: center;
+	width: 13%;
+	margin: 0 auto;
+	border-top: 4px solid	#FF5E1E;
+	padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.background-about-me {
+	background-color: transparent;
+    background-image: linear-gradient(
+170deg
+, #00A0C0 8%, #3A1159 86%);
+}
+
+.img-about-me {
+	vertical-align: middle;
+	display: inline-block;
+	width: 48%;
+	height: auto;
+	max-width: 100%;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.p-about-me {
+	margin-bottom: 1.75rem;
+	border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+		display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+		text-align: left;
+    color: #FFFFFF;
+    font-family: "Monserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.shape-envelope {
+	position: absolute;
+    left: 0;
+    width: 100%;
+		fill: white;
+}
+
+.ul-tabs li{
+	color: white;
+	background-color: #24345B;
+	cursor: pointer;
+	font-size: 15px;
+  font-weight: 600;
+	padding: auto;
+	padding: 1em 1.5em;
+	flex: 1 1 auto; /* Pesuisar mais isso, pois permite fazer screch da forma que quermeos */
+}
+
+.ul-tabs .active{
+	background-color: #E65617;
+
+}
+
+.tab-content li {
+	-webkit-animation: fadeIn linear .3s;
+  animation: fadeIn linear .3s;
+}
+
+.btn-project {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 6px 15px;
+	cursor: pointer;
+	margin: 0 5px;
+	font-weight: normal;
+	color: #333;
+	background: #fff;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+
+}
+
+.btn-project-active {
+	color: #fff;
+	background: #333;
+}
+
+.my-splide li {
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+.img-landing-page {
+	max-height: 540px;
+	height: auto;
+	width: 100%;
+}
+
+.img-mockup {
+	object-fit: cover;
+	vertical-align: middle;
+	width: 500px;
+	height: auto;
+}
+
+.footer {
+	background-color: #5F5995;
+}
+
+.input {
+	border-radius: 30px 30px 30px 30px;
+	width: 300px;
+	text-indent: 9px;
+	color: #000000;
+	background: #EBE4E9;
+	padding: .75em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #eaeaea;
+	font-weight: 900;
+}
+
+.input::placeholder {
+	color: #4c0e9c;
+	font-weight: 900;
+}
+
+.enviar {
+	font-weight: 900;
+	background-color: #9543A2;
+	-webkit-transition: all .25s linear 0s;
+  transition: all .25s linear 0s;
+	border-radius: 2px;
+}
+
+.enviar:hover {
+	background-color: #FF5E1E;
+}
+
+.contact-icon {
+	font-size: 1.5em;
+}
+
+.subtitle {
+	font-size: 30px;
+	font-weight: 600;
+}
+.left-content {
+	margin-right: 25%;
+}
+
+/* random css */
+
+/* .splide {
+  padding: 20px 0;
+}
+
+.splide__slide img{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 400ms;
+    transform: scale(.9);
+    transform-origin: center center;
+}
+
+.splide__slide.is-active img{
+    transform: scale(1);
+}
+
+.splide .splide__arrow {
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  transform: none;
+  border-radius: unset;
+  width: 50px;
+  opacity: .9;
+}
+
+.splide .splide__arrow  svg {
+	filter: invert(1);
+	width: 24px;
+	height: 24px;
+}
+
+.splide__arrow.splide__arrow--prev {
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+}
+.splide__arrow.splide__arrow--next {
+  right: 0;
+  background: linear-gradient(270deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+} */
